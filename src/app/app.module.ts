@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { BestSellerComponent } from './best-seller/best-seller.component';
 
+import { BooklistService } from './booklist.service';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { BestSellerComponent } from './best-seller/best-seller.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [BooklistService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
