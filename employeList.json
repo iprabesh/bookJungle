@@ -1,8 +1,8 @@
 [
 
- 	{"id: ": 1, "name": "Narayan", "age: ": 30 },
- 	{"id: ": 2, "name": "Ram", "age: ": 20 },
- 	{"id: ": 3, "name": "Gopal", "age: ": 40 },
- 	{"id: ": 4, "name": "Hari", "age: ": 60 }
+ 	{"id": 1, "name": "Narayan", "age": 30 },
+ 	{"id": 2, "name": "Ram", "age": 20 },
+ 	{"id": 3, "name": "Gopal", "age": 40 },
+ 	{"id": 4, "name": "Hari", "age": 60 }
 
  ]
