@@ -1,0 +1,9 @@
+[
+  	{"title": "Java Your Way", "isbn": "001-00-0001", "author": "Ram", "genre": "Programming"},
+  	{"title": "Python Your Way", "isbn": "001-00-0002", "author": "Hari", "genre": "Programming"},
+  	{"title": "Ruby Your Way", "isbn": "001-00-0003", "author": "Ram", "genre": "Programming"},
+  	{"title": "PHP Your Way", "isbn": "001-00-0004", "author": "Krishna", "genre": "Programming"},
+    {"title": "Titanic", "isbn": "001-00-0005", "author": "Ram", "genre": "Romance"},
+    {"title": "Murder in Glen Park", "isbn": "001-00-0006", "author": "Meera", "genre": "Suspense"},
+  
+]
