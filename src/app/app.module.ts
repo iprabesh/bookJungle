@@ -8,6 +8,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { BestSellerComponent } from './best-seller/best-seller.component';
 
 import { BooklistService } from './booklist.service';
+import { DescriptionsComponent } from './descriptions/descriptions.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { BooklistService } from './booklist.service';
     AppComponent,
     HeaderComponent,
     JumbotronComponent,
-    BestSellerComponent
+    BestSellerComponent,
+    DescriptionsComponent
   ],
   imports: [
     BrowserModule
