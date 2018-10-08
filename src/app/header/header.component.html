@@ -23,20 +23,21 @@
 <!--Navigation bar at top of page-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">Book Jungle</a>
+    <a class="navbar-brand" routerLink = "/home">Book Jungle</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Genre</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Best Seller</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink = "/home">Home</a></li>
+     <!--  <li class="nav-item"><a class="nav-link" href="#">Genre</a></li> -->
+      <li class="nav-item"><a class="nav-link" routerLink = "/bestseller">Best Seller</a></li>
       <li class="nav-item"><a class="nav-link" href="#">Discover</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li> -->
 
     </ul>
     </div>
     <a class="btn btn-primary" href="#">Sign In</a>
   </div>
   </nav>
+  <router-outlet></router-outlet>

@@ -1,15 +1,13 @@
 import { Injectable } from '@angular/core';
-
+import {HttpClient } from '@angular/common/http';
 @Injectable()
 export class BooklistService {
+
+	private _url = "https://raw.githubusercontent.com/iprabesh/bookJungle/master/bookList.json"
+
   getBookList(){
-  	return [
-  	{"title": "Java Your Way", "isbn": "001-00-0001", "author": "Sam"},
-  	{"title": "Python Your Way", "isbn": "001-00-0002", "author": "Ram"},
-  	{"title": "Ruby Your Way", "isbn": "001-00-0003", "author": "Tina"},
-  	{"title": "PHP Your Way", "isbn": "001-00-0004", "author": "Shyam"}
-  	]
+		return this.http.get(this._url);
   }	
-  constructor() { }
+  constructor( private http: HttpClient) { }
 
 }
