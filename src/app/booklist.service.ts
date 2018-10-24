@@ -7,8 +7,7 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class BooklistService {
 
-	private _url = "https://raw.githubusercontent.com/iprabesh/bookJungle/master/bookList.json"
-
+	private _url = "https://localhost:5001/api/bookitem";
 	constructor( private http: HttpClient) { }
 
   getBookList(): Observable<IBooks[]> {

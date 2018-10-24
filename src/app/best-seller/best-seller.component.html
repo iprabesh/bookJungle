@@ -1,23 +1,13 @@
 
 
 <div class = "bestSeller" *ngFor = "let book of bookList ">
-<div class = "col-sm-3"></div>
-<div class="card text-white bg-info mb-3" style="width: 18rem;">
-	
-	<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-	<div class="card-body">
-	  <h5 class="card-title">{{book.title}}</h5>
-	  <p class="card-text">{{book.author}}  {{book.isbn}} </p>
-	  <a href="#" class="btn btn-danger">Buy Now</a>
-	</div>
-  </div>
+	<div class = "col-sm-3"></div>
+		<div class="card text-white bg-info mb-3" style="width: 18rem;">
+				<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+					<div class="card-body">
+						<h5 class="card-title">{{book.title}}</h5>
+						<p class="card-text">{{book.author}}  {{book.isbn}} </p>
+						<a href="#" class="btn btn-danger">Buy Now</a>
+					</div>
+			</div>
 </div>
-</div>
-<!-- <h4>Best Seller</h4>
-
-	<ul>
-		<li></li>
-		<li></li>
-		<li>{{book.isbn}}</li>
-	</ul>
-</div> -->
