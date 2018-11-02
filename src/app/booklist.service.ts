@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class BooklistService {
 
-	private _url = "https://localhost:5001/api/bookitem";
+	private _url = "https://localhost:5001/api/bookitem"; //5001 for VS code 44350 for VS
 	constructor( private http: HttpClient) { }
 
   getBookList(): Observable<IBooks[]> {
