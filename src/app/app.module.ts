@@ -13,6 +13,7 @@ import { DescriptionsComponent } from './descriptions/descriptions.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { AddBookComponent } from './add-book/add-book.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     JumbotronComponent, 
     DescriptionsComponent,
-    routingComponents
+    routingComponents,
+    AddBookComponent
   ],
   imports: [
     BrowserModule,
