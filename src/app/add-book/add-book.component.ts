@@ -18,7 +18,7 @@ export class AddBookComponent implements OnInit {
 createBook(id1: any, title1: string, isbn1: string, author1: string, rating1: number, genre1: string)
 {
   this._booklistService.addBook(id1,title1,isbn1,author1,rating1,genre1).subscribe(
-     datat => console.log("Finally")
+     data => console.log("Finally")
   )
 }
   ngOnInit() {
