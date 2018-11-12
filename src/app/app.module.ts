@@ -14,6 +14,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AddBookComponent } from './add-book/add-book.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AddBookComponent } from './add-book/add-book.component';
     JumbotronComponent, 
     DescriptionsComponent,
     routingComponents,
-    AddBookComponent
+    AddBookComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

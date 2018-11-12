@@ -38,38 +38,72 @@
 
     </ul>
     </div>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Sign in</button>
+  <!--login button-->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Sign in</button>
 
-
-  <!-- The Modal -->
-  <div class="modal" id="myModal">
+  <!--login modal-->
+<div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                    <div class="form-group">
+                        <a href="" class="float-right">New user?</a>
+                        <label for="uname1">Username</label>
+                        <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" required="">
+                        <div class="invalid-feedback">Oops, you missed this one.</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control form-control-lg" id="pwd1" required="" autocomplete="new-password">
+                        <div class="invalid-feedback">Enter your password too!</div>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="rememberMe">
+                      <label class="custom-control-label" for="rememberMe">Remember me on this computer</label>
+                    </div>
+                    <div class="form-group py-4">
+                        <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                        <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
+    </div>
+</div>
+
+
+  </div>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Book</button>
+
+  <!-- Modal content-->
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Add Book</h3>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal col-sm-12">
+              <div class="form-group"><label>Title</label><input class="form-control required" placeholder="Book Title" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+              <div class="form-group"><label>Author</label><textarea class="form-control" placeholder="Author of Book" data-placement="top" data-trigger="manual"></textarea></div>
+              <div class="form-group"><label>ISBN</label><input class="form-control email" placeholder="Book ISBN" data-placement="top" data-trigger="manual" data-content="Must be a valid ISBN" type="text"></div>
+              <div class="form-group"><label>Genre</label><input class="form-control phone" placeholder="Genre of Book" data-placement="top" data-trigger="manual" data-content="Must be a valid Genre" type="text"></div>
+              <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+          </div>
         </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-        
       </div>
     </div>
-  </div>
-
-
-  </div>
-
-  <a class="btn btn-primary" href="add">+ Add Book</a>
 
   </nav>
 
